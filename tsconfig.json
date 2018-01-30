@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "umd",
+        "target": "ES5",
+        "jsx": "react"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

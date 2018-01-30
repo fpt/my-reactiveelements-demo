@@ -1,0 +1,29 @@
+{
+  "name": "my-reactiveelements-demo",
+  "version": "1.0.0",
+  "description": "Simple demonstration of ReactiveElements",
+  "keywords": "ReactiveElements browserify TypeScript, CSS-Modules",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo src/app.ts:dist/bundle.js -ol -- -p [ tsify --noImplicitAny ] -p [css-modulesify -o dist/style.css] -o dist/bundle.js src/app.ts",
+    "browserify": "browserify -p [ tsify --noImplicitAny ] -p [css-modulesify -o dist/style.css] -o dist/bundle.js src/app.ts"
+  },
+  "author": "Youichi Fujimoto (https://github.com/fpt)",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.0.35",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reactive-elements": "^0.6.8"
+  },
+  "devDependencies": {
+    "@types/recompose": "^0.24.4",
+    "browserify": "^15.2.0",
+    "budo": "^11.0.1",
+    "css-modulesify": "^0.28.0",
+    "recompose": "^0.26.0",
+    "tsify": "^3.0.4",
+    "typescript": "^2.6.2"
+  }
+}

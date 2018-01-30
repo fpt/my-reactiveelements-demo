@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>React.js components as HTML custom elements - native custom elements demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
+  <script src="./dist/bundle.js"></script>
+  <script src="./node_modules/document-register-element/build/document-register-element.js"></script>
+  <script src="./node_modules/reactive-elements/dist/reactive-elements.min.js"></script>
+  <link href="./dist/style.css" media="all" rel="stylesheet" />
+</head>
+
+<body>
+
+<script>
+  document.registerReact('my-react-counter', MyCounter);
+</script>
+
+<my-react-counter></my-react-counter>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.updown {
+    font-size: normal;
+    font-size: larger;
+    border-radius: 4px;
+}
+
+.counter {
+    background-color:silver;
+    font-size: larger;
+    text-align: right;
+    border-radius: 4px;
+    width: 4em;
+}
